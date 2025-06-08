@@ -54,7 +54,7 @@ The server can be configured using environment variables:
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `HOST` | `0.0.0.0` | Server host address |
-| `PORT` | `64002` | Server port |
+| `PORT` | `8443` | Server port |
 | `SSL_KEYFILE` | `server.key` | Path to SSL private key |
 | `SSL_CERTFILE` | `server.crt` | Path to SSL certificate |
 | `LOG_LEVEL` | `INFO` | Logging level (DEBUG, INFO, WARNING, ERROR) |
