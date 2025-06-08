@@ -226,7 +226,7 @@ def main():
     import uvicorn
     
     host = os.getenv("HOST", "0.0.0.0")
-    port = int(os.getenv("PORT", "64002"))
+    port = int(os.getenv("PORT", "8443"))
     ssl_key = os.getenv("SSL_KEYFILE", "server.key")
     ssl_cert = os.getenv("SSL_CERTFILE", "server.crt")
     
