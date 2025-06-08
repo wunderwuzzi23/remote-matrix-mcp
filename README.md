@@ -5,7 +5,7 @@ A remote MCP (Model Context Protocol) server built with FastMCP to work with Cha
 - **Search**: Returns random references from The Matrix universe with ticket/issue search capabilities
 - **Fetch**: Returns random references from The Hitchhiker's Guide to the Galaxy for detailed information retrieval
 
-**Created this for testing purposes to explore how ChatGPT Integreations work.**
+**Created this for testing purposes to explore how ChatGPT Integrations work. Also has instructions to speak like caveman, etc... that I used for testing a few things.**
 
 ## Requirements
 
