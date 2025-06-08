@@ -86,7 +86,7 @@ LOG_LEVEL=INFO uvicorn mcp_matrix:http_app --host 0.0.0.0 --port 8443
 LOG_LEVEL=INFO uvicorn mcp_matrix:http_app --host 0.0.0.0 --port 8443 --ssl-keyfile server.key --ssl-certfile server.crt
 ```
 
-The server will start at `http://0.0.0.0:64002` by default (or `https://` if SSL certificates are present).
+The server will start at `http://0.0.0.0:8443` by default (or `https://` if SSL certificates are present).
 
 ## API Tools
 
@@ -139,21 +139,21 @@ The server will start at `http://0.0.0.0:64002` by default (or `https://` if SSL
 
 ### 1. Check Server Health
 ```bash
-curl http://localhost:64002/health
+curl http://localhost:8443/health
 # or with SSL:
-curl -k https://localhost:64002/health
+curl -k https://localhost:8443/health
 ```
 
 ### 2. List Available Tools
 ```bash
-curl http://localhost:64002/mcp/manifest
+curl http://localhost:8443/mcp/manifest
 ```
 
 ### 3. Call Tools Directly
 
 **Search Tool:**
 ```bash
-curl -X POST http://localhost:64002/mcp/call \
+curl -X POST http://localhost:8443/mcp/call \
   -H "Content-Type: application/json" \
   -d '{
     "name": "search",
@@ -163,7 +163,7 @@ curl -X POST http://localhost:64002/mcp/call \
 
 **Fetch Tool:**
 ```bash
-curl -X POST http://localhost:64002/mcp/call \
+curl -X POST http://localhost:8443/mcp/call \
   -H "Content-Type: application/json" \
   -d '{
     "name": "fetch", 
