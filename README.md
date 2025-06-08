@@ -37,7 +37,8 @@ pip install fastmcp
 
 ### 3. Generate SSL Certificates (Optional for HTTPS)
 
-Get a real certificate.
+**Needet a real certificate**, but here how you can generate a self-signed one. 
+You could also use `ngrok` or `Cloudflare Tunnels`.
 
 ```bash
 # Generate self-signed certificates for development
