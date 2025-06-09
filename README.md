@@ -35,17 +35,9 @@ source venv/bin/activate
 pip install fastmcp
 ```
 
-### 3. Generate SSL Certificates (Optional for HTTPS)
+### 3. SSL Certificates (Optional for HTTPS)
 
-**Needet a real certificate**, but here how you can generate a self-signed one. 
-You could also use `ngrok` or `Cloudflare Tunnels`.
-
-```bash
-# Generate self-signed certificates for development
-openssl req -x509 -newkey rsa:4096 -keyout server.key -out server.crt -days 365 -nodes
-```
-
-Insecure http won't work for any real client by the way. Just for testing.
+**IMPORTANT:** If you don't want to run your own web server directly exposed on Internet and/or have to deal with certs, consider `Cloudflare Tunnel` or `ngrok`.
 
 ## Configuration
 
